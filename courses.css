@@ -1,0 +1,88 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.header, .header-left, .header-right{
+    height: 90px;
+}
+.header{
+    margin: 2% 5%;
+    background-color: #242e39;
+    border-radius: 10px;
+}
+.header-right nav{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav-items a{
+    color: crimson;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.nav-items li{
+    list-style: none;
+}
+h1,h2{
+    color:crimson;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 32px;
+}
+.header-left{
+    float: left;
+    width:30%;
+}
+.header-right{
+    float: right;
+    width:70%;
+}
+.body-container{
+    margin: 0 10%;
+}
+.body-content-left{
+    float: left;
+    width: 50%;
+}
+.course-search-container{
+    font-size: 20px;
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: thistle;
+    text-align: center;
+}
+.course-search-container label{
+    font-size: 16px;
+}
+.body-content-right{
+    float: right;
+    width: 45%;
+}
+.courses-taking-container{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+.search-results-container{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
