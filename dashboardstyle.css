@@ -1,0 +1,141 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #242e39;
+}
+.header, .header-left, .header-right{
+    height: 90px;
+}
+.header{
+    margin: 2% 5%;
+    background-color:#fff;
+    border-radius: 10px;
+}
+.header-right nav{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav-items a{
+    color: crimson;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.nav-items li{
+    list-style: none;
+}
+h1,h2{
+    color:crimson;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 32px;
+}
+.header-left{
+    float: left;
+    width:30%;
+}
+.header-right{
+    float: right;
+    width:70%;
+}
+.body-container{
+    margin: 0 10%;
+}
+.body-content-left{
+    float: left;
+    width: 50%;
+}
+.courses-container{
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+.courses-taking-container{
+    width: 100%;
+    border-radius: 15px;
+    height: 400px;
+}
+.body-content-right{
+    float: right;
+    width: 45%;
+}
+.finances-container{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+.summary-container{
+    border-radius: 15px;
+    width: 100%;
+    float: left;
+    height: 300px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.summary-container a{
+    display: block;
+}
+.aid-container{
+    width: 100%;
+    height: 300px;
+}
+.aid-items{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.aid-items a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightblue;
+    width: 100%;
+}
+.aid-items li{
+    list-style: none;
+}
+.personal-container{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+.summary-container a{
+    display: block;
+}
+.course-items-container{
+    height: 200px;
+    width: 100%;
+}
+.course-nav-items{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.course-nav-items a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightblue;
+    width: 100%;
+}
+.course-nav-items li{
+    list-style: none;
+}
