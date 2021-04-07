@@ -41,21 +41,11 @@ input{
     padding: 10px;
 }
 a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
     appearance: button;
     width: 65%;
     background-color: crimson;
     text-decoration: none;
     padding: 10px;
-    border-radius: 5px;
-    color: white;
-    border:1px solid crimson
-}
-button{
-    width: 65%;
-    padding: 10px;
-    background-color:crimson;
     border-radius: 5px;
     color: white;
     border:1px solid crimson
