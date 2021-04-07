@@ -1,9 +1,8 @@
 # QCFirst
-## Students most important tool for QC academics
+## Students most important tool for everything involving QC Academics
 ### Sign Up Page
 ![DesktopSignUp](https://github.com/alanchazari/qcfirst/blob/main/Sign%20In%20Desktop.PNG)
 ![MobileSignUP](https://github.com/alanchazari/qcfirst/blob/main/Sign%20In%20Mobile.PNG)
-
 Has a slideshow of the campus, straighforward sign up
 ### Dashboard
 ![DesktopDashboard](https://github.com/alanchazari/qcfirst/blob/main/Desktop%20Dashboard.png)
