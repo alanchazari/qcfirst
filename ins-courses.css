@@ -69,6 +69,9 @@ h1,h2{
     width:70%;
 }
 .body-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-top: 0px;
     height: 100%;
     width: 100%;
@@ -82,19 +85,11 @@ h1,h2{
     color: white;
     border:1px solid gold;
 }
-
-.body-content-left{
-    margin: 0 5%;
-    float: left;
-    width: 30%;
+.body-content{
+    width: 500px;
     height: 100%;
 }
-.body-content-right{
-    margin: 0 5%;
-    float:right;
-    width: 50%;
-}
-.courses-container , .misc-container , .enrollment-container{
+.courses-container , .misc-container{
     color: white;
     background-color: rgba(252, 252, 252, 0.5);
     padding: 20px;
@@ -102,26 +97,28 @@ h1,h2{
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
 }
+.courses-container{
+    height: 650px;
+}
 .misc-container {
-    height: 600px;
+    height: 200px;
 }
-.enrollment-container{
-    height: 300px;
-}
-.courses-taking-container{
-    text-align: center;
-    background:grey;
-    height: 80%;
+#description{
+
+    text-align: left;
     width: 100%;
+    height: 100px;
 }
-.search {
+
+.create {
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     width: 100%;
 }
-.search input{
+.create input{
     padding: 10px;
     border-radius: 5px;
     width: 80%;
@@ -129,7 +126,7 @@ h1,h2{
 option, select{
     margin: 2%;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 @media screen and (max-width: 960px) {
     .header-left{
@@ -155,23 +152,11 @@ option, select{
         display: flex;
         flex-direction: column;
     }
-    .body-content-left,.body-content-right{
-        width: 100%;
-        margin: auto;
-    }
     .header{
         width: 500px;
         margin: auto;
     }
-    .courses-container,.misc-container{
-        width: 500px;
-        height: 500px;
-        margin: auto;
-    }
-    .enrollment-container{
-        width: 500px;
-        margin: auto;
-    }
+
     .header-right span{
         padding: 0;
     }

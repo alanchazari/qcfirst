@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QCFirst</title>
+<meta name="viewport" content="width = device-width, initial scale = 1">
+<link rel = "stylesheet" href= "style.css">
+</head>
+<body>
+    <div class = "header">
+        <h1>QCFirst</h1>
+    </div>
+    <div class="header-logo">
+        <p>Presented by </p>
+        <img src = "https://www.qc.cuny.edu/preview/media/images/logos-and-icons/qc-white-knockout.png"><br>
+    </div>
+    <div class="body">
+        <div class = "login-container">
+            <div class = "sign-in">
+                <h2>Sign-Up</h2>
+                <form>
+                    <div class = "box">
+                        <input type = "text" placeholder = "Email">  
+                    </div>
+                    <div class = "box">
+                        <input type = "text" placeholder = "CUNYID">  
+                    </div>
+                    <div class = "box">
+                        <input type = "text" placeholder = "Username">  
+                    </div>
+                    <div class = "box">
+                        <input type = "password" placeholder = "Password">  
+                    </div>
+                    <div class = "box">
+                        <input type = "password" placeholder = "Confirm Password">  
+                    </div>
+                    <div class = "options-container"> User type:
+                        <div class = "option">
+                           <input type = "radio" class="radio" id = "User" name = "category"/>
+                           <label for = "User"> Teacher</label>
+                        </div>
+                        <div class = "option">
+                            <input type = "radio" class="radio" id = "Department" name = "category"/>
+                            <label for = "Department"> Student</label>
+                        </div>
+                    </div>
+                    <div class = "box">
+                        <a class = "button" href="index.html">Sign In</a>
+                    </div>
+                </form>
+                <p>Already have an account?</p>
+                <p><a class="button" href="index.html">Log In</a></p>
+            </div>
+            <div class = "slideshow-container">
+                <div class="slideshow" id = "show">
+                    <img src="https://flushingpost.com/wp-content/uploads/sites/12/2020/02/Queens-College.jpg">
+                </div>
+                <div class="slideshow" id = "show">
+                    <img src="https://thumbor.forbes.com/thumbor/700x345/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5b3e159b4bbe6f459bb99886%2F0x0.jpg ">
+                </div>
+                <div class="slideshow" id = "show">
+                    <img src="https://secure-media.collegeboard.org/CollegePlanning/media/image/photo/1076_Photo.jpg">
+                </div>
+                <div class="slideshow" id = "show">
+                    <img src="https://static.wixstatic.com/media/4999e9_3238e4a3df0b46e28302209c5b8bad14~mv2.jpg/v1/fill/w_740,h_482,al_c,lg_1,q_90/4999e9_3238e4a3df0b46e28302209c5b8bad14~mv2.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          
+          var slides = document.getElementsByClassName("slideshow");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="courses.css">
+<script src="script.js"></script>
 <meta name="viewport" content="width = device-width, initial scale = 1">
 <title>Student Courses</title>
 </head>
@@ -14,21 +15,33 @@
             <nav>
                 <ul class = "nav-items">
                     <li>
-                        <a href="messages.html">Messages</a>
+                        <div class = "dropdown">
+                            <span>
+                            <button onclick = "myFunction()" class = "dropbtn">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </button>
+                            </span>
+                            <div id = "myDropdown" class = "dropdown-content">
+                                <a href="account.html">Account</a>
+                                <a href="courses.html">Courses</a>
+                                <a href="messages.html">Messages</a>
+                                <a href="index.html">Sign-Out</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="finances.html">Finances</a>
+                        <a id = "desktop" href="messages.html">Messages</a>
                     </li>
                     <li>
-                        <a href="courses.html">Courses</a>
+                        <a id = "desktop" href="courses.html">Courses</a>
                     </li>
                     <li>
-                        <a href="account.html">Account</a>
+                        <a id = "desktop" href="account.html">Account</a>
                     </li>
                     <li>
-                        <a href="index.html" style ="border: 1px solid black;
-                        background: white; padding: 28px;
-                        margin :0; border-radius: 15px;">Sign Out</a>
+                        <a id = "desktop" href="index.html" style ="border: 1px solid white; background: black; color: white; padding: 28px; margin :0;">Sign Out</a>
                     </li>
                 </ul>
             </nav>
@@ -36,122 +49,41 @@
     </div>
     <div class = "body-container">
         <div class = "body-content-left">
-            <div><h2>Course Search</h2></div>
-            <div class = "course-search-container">
-                <div class = "search">Search</div>
-                <div class="department-box">Select Term
-                    <div class = "options-container">
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Term" name = "category"/>
-                            <label for = "Term"> Winter</label>
-                        </div>
-                        <div class = "option">
-                         <input type = "radio" class="radio" id = "Term" name = "category"/>
-                         <label for = "Term"> Fall</label>
-                     </div>
-                     <div class = "option">
-                         <input type = "radio" class="radio" id = "Term" name = "category"/>
-                         <label for = "Term"> Spring</label>
-                     </div>
-                     </div>
-                 </div>
-                <div class="department-box">Select Department
-                    <div class = "options-container">
-                        <div class = "option">
-                           <input type = "radio" class="radio" id = "Department" name = "category"/>
-                           <label for = "Department"> Department</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Department" name = "category"/>
-                            <label for = "Department"> Department</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Department" name = "category"/>
-                            <label for = "Department"> Department</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Department" name = "category"/>
-                            <label for = "Department"> Department</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Department" name = "category"/>
-                            <label for = "Department"> Department</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Department" name = "category"/>
-                            <label for = "Department"> Department</label>
-                        </div>
-                    </div>
+            <h2>Course Search</h2>
+            <div class = "courses-container">
+                <div class = "search">
+                    <input type = "text" required="" placeholder="Course ID">
                 </div>
-                <div class="department-box">Select Course in Deparment
-                    <div class = "options-container">
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Course" name = "category"/>
-                            <label for = "Course"> Course</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Course" name = "category"/>
-                            <label for = "Course"> Course</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Course" name = "category"/>
-                            <label for = "Course"> Course</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Course" name = "category"/>
-                            <label for = "Course"> Course</label>
-                        </div>
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Course" name = "category"/>
-                            <label for = "Course"> Course</label>
-                        </div>
-                    </div>
-                 </div>
-                 <div class="department-box">Select Instructor in Course
-                    <div class = "options-container">
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "Instructor" name = "category"/>
-                            <label for = "Instructor"> Instructor</label>
-                        </div>
-                        <div class = "option">
-                         <input type = "radio" class="radio" id = "Instructor" name = "category"/>
-                         <label for = "Instructor"> Instructor</label>
-                     </div>
-                     <div class = "option">
-                         <input type = "radio" class="radio" id = "Department" name = "category"/>
-                         <label for = "Instructor"> Instructor</label>
-                     </div>
-                     </div>
-                 </div>
-                 <div class="department-box">History
-                    <div class = "options-container">
-                        <div class = "option">
-                            <input type = "radio" class="radio" id = "History" name = "category"/>
-                            <label for = "History"> Previous Search</label>
-                        </div>
-                        <div class = "option">
-                         <input type = "radio" class="radio" id = "History" name = "category"/>
-                         <label for = "History"> Previous Search</label>
-                     </div>
-                     <div class = "option">
-                         <input type = "radio" class="radio" id = "History" name = "category"/>
-                         <label for = "History"> Previous Search</label>
-                     </div>
-                     </div>
-                 </div>
-                 <div><button type="button" style="padding: 10px;">Search</button></div>
+                <div class="search">
+                    <input type="text" required="" placeholder="Semester">
+                </div>
+                <div class="search">
+                    <input type="text" required="" placeholder="Department">
+                </div>
+                <div class="search">
+                    <input type="text" required="" placeholder="Instructor">
+                </div>
+                <div class = "search">
+                    <select>
+                        <option> Mon/Wed</option>
+                        <option> Tu/Thur</option>
+                        <option> Tu/Fri</option>
+                        <option> Mon/Tu/Wed/Thur/Fri</option>
+                        <option> Fri</option>
+                    </select>
+                </div>
+                <div class = "search">
+                    <a href="#">Search</a>
+                </div>
             </div>
         </div>
         <div class = "body-content-right">
-            <div><h2>Courses Taking</h2></div>
-            <div class = "courses-taking-container">
-                <div><h3>Courses Currently Taking</h3></div>
-                <div><h3>Courses Enrolled In</h3></div>
-            <div>
+            <div><h2>Search Results</h2></div>
+            <div class = "misc-container">
             </div>
+            <div><h2>Enrollment</h2></div>
+            <div class = "enrollment-container">
             </div>
-            <div><h2>Course Search Results</h2></div>
-            <div class = "search-results-container"></div>
         </div>
     </div>
 </body>

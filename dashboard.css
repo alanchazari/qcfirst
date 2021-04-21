@@ -86,15 +86,15 @@ h1,h2{
 .body-content-left{
     margin: 0 5%;
     float: left;
-    width: 30%;
+    width: 50%;
     height: 100%;
 }
 .body-content-right{
     margin: 0 5%;
     float:right;
-    width: 50%;
+    width: 30%;
 }
-.courses-container , .misc-container , .enrollment-container{
+.courses-container , .misc-container{
     color: white;
     background-color: rgba(252, 252, 252, 0.5);
     padding: 20px;
@@ -102,11 +102,13 @@ h1,h2{
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
 }
-.misc-container {
+.courses-container{
     height: 600px;
 }
-.enrollment-container{
-    height: 300px;
+.misc-container{
+    height: 275px;
+    text-align: center;
+    width: 100%;
 }
 .courses-taking-container{
     text-align: center;
@@ -114,23 +116,35 @@ h1,h2{
     height: 80%;
     width: 100%;
 }
-.search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.course-items-container{
+    height: fit-content;
     width: 100%;
 }
-.search input{
-    padding: 10px;
-    border-radius: 5px;
-    width: 80%;
+.course-items-container nav{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
 }
-option, select{
-    margin: 2%;
-    border-radius: 5px;
-    font-size: 16px;
+.course-nav-items{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
+.courses-container nav{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.course-items-container li{
+    list-style: none;
+    text-decoration: none;
+    height: 20%;
+    width: 100%;
+}
+
 @media screen and (max-width: 960px) {
     .header-left{
         display: flex;
@@ -159,16 +173,7 @@ option, select{
         width: 100%;
         margin: auto;
     }
-    .header{
-        width: 500px;
-        margin: auto;
-    }
-    .courses-container,.misc-container{
-        width: 500px;
-        height: 500px;
-        margin: auto;
-    }
-    .enrollment-container{
+    .courses-container,.misc-container,.header{
         width: 500px;
         margin: auto;
     }
@@ -216,3 +221,5 @@ option, select{
         visibility: hidden;
     }
 }
+
+

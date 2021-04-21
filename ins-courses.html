@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="ins-courses.css">
+<script src="script.js"></script>
+<meta name="viewport" content="width = device-width, initial scale = 1">
+<title>Instructor Courses</title>
+</head>
+<body>
+    <div class = "header">
+        <div class = "header-left">
+            <h1><a href="ins-dashboard.html">QCFirst</a></h1>
+        </div>
+        <div class = "header-right">
+            <nav>
+                <ul class = "nav-items">
+                    <li>
+                        <div class = "dropdown">
+                            <span>
+                            <button onclick = "myFunction()" class = "dropbtn">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </button>
+                            </span>
+                            <div id = "myDropdown" class = "dropdown-content">
+                                <a href="ins-account.html">Account</a>
+                                <a href="ins-courses.html">Courses</a>
+                                <a href="ins-messages.html">Messages</a>
+                                <a href="instructorsignin.html">Sign-Out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a id = "desktop" href="ins-messages.html">Messages</a>
+                    </li>
+                    <li>
+                        <a id = "desktop" href="ins-courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <a id = "desktop" href="ins-account.html">Account</a>
+                    </li>
+                    <li>
+                        <a id = "desktop" href="instructorsignin.html" style ="border: 1px solid white; background: black; color: white; padding: 28px; margin :0;">Sign Out</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class = "body-container">
+        <div class = "body-content">
+            <h2>Course Creator</h2>
+            <div class = "courses-container">
+                <div class = "create">
+                    <input type = "text" required="" placeholder="Course ID">
+                </div>
+                <div class = "create">
+                    <input type = "text" required="" placeholder="Semester">
+                </div>
+                <div class = "create">
+                    <input type = "text" required="" placeholder="Course Name">
+                </div>
+                <div class="create">
+                    <input type="text" required="" placeholder="Department">
+                </div>
+                <div class="create">
+                    <input type="text" required="" placeholder="Instructor">
+                </div>
+                <div class="create">
+                    <input type="text" required="" placeholder="Capacity">
+                </div>
+                <div class = "create">
+                    <select>
+                        <option> Mon/Wed</option>
+                        <option> Tu/Thur</option>
+                        <option> Tu/Fri</option>
+                        <option> Mon/Tu/Wed/Thur/Fri</option>
+                        <option> Fri</option>
+                    </select>
+                </div>
+                <div class = "create">
+                    <input id = "description" type = "text" required="" placeholder="Course Description">
+                </div>
+                <div class = "create">
+                    <a href="#">Create Class</a>
+                </div>
+            </div>
+            <div><h2>View Roster</h2></div>
+            <div class = "misc-container">
+                <div class = "create">
+                    <select onchange = "location = this.value;">
+                        <option> Select Roster</option>
+                        <option value = "ins-roster.html"> Course 1</option>
+                        <option value = "ins-roster.html"> Course 2</option>
+                        <option value = "ins-roster.html"> Course 3</option>
+                        <option value = "ins-roster.html"> Course 4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

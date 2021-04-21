@@ -69,67 +69,42 @@ h1,h2{
     width:70%;
 }
 .body-container {
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
-.body-container a{
-    appearance: button;
-    background-color: rgba(36, 46, 57, 0.6);
-    text-decoration: none;
-    padding: 10px;
+.misc-container{
     border-radius: 5px;
-    color: white;
-    border:1px solid gold;
-}
-
-.body-content-left{
-    margin: 0 5%;
-    float: left;
-    width: 30%;
-    height: 100%;
-}
-.body-content-right{
-    margin: 0 5%;
-    float:right;
-    width: 50%;
-}
-.courses-container , .misc-container , .enrollment-container{
+    width: 500px;
+    height: 300px;
     color: white;
     background-color: rgba(252, 252, 252, 0.5);
+    justify-content: center;
     padding: 20px;
-    width: 100%;
+}
+.box{
+    color: white;
+    background-color: rgba(252, 252, 252, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+    height: 700px;
+    font-size: 16px;
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
 }
-.misc-container {
-    height: 600px;
-}
-.enrollment-container{
-    height: 300px;
-}
-.courses-taking-container{
-    text-align: center;
-    background:grey;
-    height: 80%;
+.box input{
+    opacity: .9;
+    outline: none;
+    padding: 5%;
     width: 100%;
-}
-.search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-}
-.search input{
-    padding: 10px;
+    border: 1px solid black;
     border-radius: 5px;
-    width: 80%;
-}
-option, select{
-    margin: 2%;
-    border-radius: 5px;
-    font-size: 16px;
 }
 @media screen and (max-width: 960px) {
     .header-left{
@@ -159,16 +134,7 @@ option, select{
         width: 100%;
         margin: auto;
     }
-    .header{
-        width: 500px;
-        margin: auto;
-    }
-    .courses-container,.misc-container{
-        width: 500px;
-        height: 500px;
-        margin: auto;
-    }
-    .enrollment-container{
+    .courses-container,.misc-container,.header{
         width: 500px;
         margin: auto;
     }
