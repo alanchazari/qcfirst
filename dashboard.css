@@ -1,225 +1,244 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100%;
-    background-color: #242e39;
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #242e39;
 }
-.header, .header-left, .header-right{
-    height: 90px;
+.header,
+.header-left,
+.header-right {
+  height: 90px;
 }
-.header{
-    margin: 2% 5%;
-    background-color:#fff;
-    border-radius: 10px;
+.header {
+  margin: 2% 5%;
+  background-color: #fff;
+  border-radius: 10px;
 }
 #desktop {
-    visibility: visible;
+  visibility: visible;
 }
 .dropdown {
-    display: none;
+  display: none;
 }
 .dropdown-content {
-    display: none;
+  display: none;
 }
-.show{
-    display: block;
+.show {
+  display: block;
 }
-.header-right nav{
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center;
-    height: 90px;
-    width: 100%;
+.header-right nav {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 100%;
 }
-.header-left a{
-    text-decoration: none;
-    color: crimson;
+.header-left a {
+  text-decoration: none;
+  color: crimson;
 }
-.nav-items{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.nav-items a{
-    color: crimson;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+.nav-items a {
+  color: crimson;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
-.nav-items li{
-    list-style: none;
+.nav-items li {
+  list-style: none;
 }
-h1,h2{
-    color:crimson;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-size: 32px;
+h1,
+h2 {
+  color: crimson;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 32px;
 }
-.header-left{
-    float: left;
-    width:30%;
+.header-left {
+  float: left;
+  width: 30%;
 }
-.header-right{
-    float: right;
-    width:70%;
+.header-right {
+  float: right;
+  width: 70%;
 }
 .body-container {
-    margin-top: 0px;
-    height: 100%;
-    width: 100%;
+  margin-top: 0px;
+  height: 100%;
+  width: 100%;
 }
-.body-container a{
-    appearance: button;
-    background-color: rgba(36, 46, 57, 0.6);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    border:1px solid gold;
-}
-
-.body-content-left{
-    margin: 0 5%;
-    float: left;
-    width: 50%;
-    height: 100%;
-}
-.body-content-right{
-    margin: 0 5%;
-    float:right;
-    width: 30%;
-}
-.courses-container , .misc-container{
-    color: white;
-    background-color: rgba(252, 252, 252, 0.5);
-    padding: 20px;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
-}
-.courses-container{
-    height: 600px;
-}
-.misc-container{
-    height: 275px;
-    text-align: center;
-    width: 100%;
-}
-.courses-taking-container{
-    text-align: center;
-    background:grey;
-    height: 80%;
-    width: 100%;
-}
-.course-items-container{
-    height: fit-content;
-    width: 100%;
-}
-.course-items-container nav{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 90px;
-    width: 100%;
-}
-.course-nav-items{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
-.courses-container nav{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
+.body-container a {
+  appearance: button;
+  background-color: rgba(36, 46, 57, 0.6);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid gold;
 }
 
-.course-items-container li{
-    list-style: none;
-    text-decoration: none;
-    height: 20%;
-    width: 100%;
+.body-content-left {
+  margin: 0 5%;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.body-content-right {
+  margin: 0 5%;
+  float: right;
+  width: 30%;
+}
+.courses-container,
+.misc-container {
+  color: white;
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 20px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+}
+.courses-container {
+  height: 600px;
+}
+.misc-container {
+  height: 275px;
+  text-align: center;
+  width: 100%;
+}
+.courses-taking-container {
+  text-align: center;
+  background: grey;
+  height: 80%;
+  width: 100%;
+}
+table {
+  margin: 10px auto;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+th,
+td {
+  padding: 3px;
+  width: 250px;
+}
+.course-items-container {
+  height: fit-content;
+  width: 100%;
+}
+.course-items-container nav {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+}
+.course-nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.courses-container nav {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.course-items-container li {
+  list-style: none;
+  text-decoration: none;
+  height: 20%;
+  width: 100%;
 }
 
 @media screen and (max-width: 960px) {
-    .header-left{
-        display: flex;
-        justify-content: center;
-        width:60%;
-    }
-    .header-right{
-        justify-content: center;
-        display: flex;
-        width:40%;
-    }
-    h2{
-        text-align: center;
-        justify-content: center;
-        display: block;
-    }
-    .body-container{
-        width: 100%;
-        background-color: #242e39;
-        height: 100%;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .body-content-left,.body-content-right{
-        width: 100%;
-        margin: auto;
-    }
-    .courses-container,.misc-container,.header{
-        width: 500px;
-        margin: auto;
-    }
-    .header-right span{
-        padding: 0;
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: hidden;
-    }
-    .show {
-        display: block;
-    }
-    .dropbtn{
-        color: white;
-        background-color: rgba(236, 22, 22, 0.5);
-        display: block;
-        height: 60px;
-        width: 60px;
-        font-size: 5px;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        cursor: default;
-    }
-    .dropbtn div{
-        width: 100%;
-        height: 2px;
-        background-color: black;
-        margin: 10px 0;
-    }
-    .dropdown-content a{
-        display: block;
-        color: black;
-        padding: 10px 5px;
-    }
-    #desktop{
-        display: none;
-        visibility: hidden;
-    }
+  .header-left {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+  .header-right {
+    justify-content: center;
+    display: flex;
+    width: 40%;
+  }
+  h2 {
+    text-align: center;
+    justify-content: center;
+    display: block;
+  }
+  .body-container {
+    width: 100%;
+    background-color: #242e39;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .body-content-left,
+  .body-content-right {
+    width: 100%;
+    margin: auto;
+  }
+  .courses-container,
+  .misc-container,
+  .header {
+    width: 500px;
+    margin: auto;
+  }
+  .header-right span {
+    padding: 0;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: hidden;
+  }
+  .show {
+    display: block;
+  }
+  .dropbtn {
+    color: white;
+    background-color: rgba(236, 22, 22, 0.5);
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: default;
+  }
+  .dropbtn div {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+  }
+  .dropdown-content a {
+    display: block;
+    color: black;
+    padding: 10px 5px;
+  }
+  #desktop {
+    display: none;
+    visibility: hidden;
+  }
 }
-
-

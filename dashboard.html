@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="dashboard.css">
-<script src="script.js"></script>
+<script src="dashboard.js"></script>
 <meta name="viewport" content="width = device-width, initial scale = 1">
 <title>Student Dashboard</title>
 </head>
@@ -51,7 +51,16 @@
         <div class = "body-content-left">
             <div><h2>Courses</h2></div>
             <div class = "courses-container">
-                <div class = "courses-taking-container">Courses Taking</div>
+                <div class = "courses-taking-container">
+                    <table id = "table">
+                        <thead>
+                            <th>Class-ID</th>
+                            <th>Course Name</th>
+                            <th>Date</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
                 <div class = "course-items-container">
                     <nav>
                         <ul class="course-nav-items">
